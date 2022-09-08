@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 #include <stdio.h>
-int main()
+int main(void)
 {
 char charType;
 int intType;
