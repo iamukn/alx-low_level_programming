@@ -1,11 +1,10 @@
 /**
- * main - this function starts the program
+ * main - starts program
  *
- * Description: prints 'with proper grammar, but the outcome is a piece of art'
+ * Description: Prints to the console
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
-#include <stdio.h> 
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,");
