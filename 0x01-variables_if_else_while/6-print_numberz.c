@@ -14,8 +14,9 @@ int ch = 0;
 /* your code goes there */
 while (ch < 10)
 {
-printf("%d\n", ch);
+printf("%d", ch);
 ch++;
 }
+printf("\n");
 return (0);
 }
