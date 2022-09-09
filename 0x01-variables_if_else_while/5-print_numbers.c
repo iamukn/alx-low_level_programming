@@ -10,12 +10,11 @@
 #include <time.h>
 int main(void)
 {
-int ch = 0;
+int a;
 /* your code goes there */
-while (ch < 10)
+for (a = 0; a < 10; a++)
 {
-printf("%d\n", ch);
-ch++;
+printf("%d\n", a);
 }
 return (0);
 }
