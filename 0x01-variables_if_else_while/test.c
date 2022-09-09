@@ -12,7 +12,7 @@ int main(void)
 {
 int n;
 
-n = 601;
+n = 0;
 /* your code goes there */
 int digit;
 digit = n % 10;
