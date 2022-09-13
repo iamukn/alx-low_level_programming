@@ -17,7 +17,7 @@ while (ch <= 8)
 {
 _putchar(str[ch]);
 ch++;
-_putchar("\n")
+_putchar("\n");
 }
 
 return (0);
