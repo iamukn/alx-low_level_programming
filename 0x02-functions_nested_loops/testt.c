@@ -2,14 +2,13 @@
 #include <stdio.h>
 int main(void)
 {
-int a;
-a =0;
+int n, last;
 
-	char str[]="daniel";
-	while (a < 6 )
-	{
-putchar(str[a]);
-a++;
-	}
+n =45;
+
+la = n % 10;
+	
+printf(la);
+	
 	return (0);
 }
