@@ -5,7 +5,7 @@
  *
  * Return: always 0
  */
-#include"main.h"
+#include "main.h"
 int main(void)
 {
 char str[] = "_putchar";
