@@ -17,7 +17,7 @@ for (ch = 0; ch < 8; ch++)
 _putchar(str[ch]);
 ch++;
 }
-_putchar('\n')
+_putchar('\n');
 
 return (0);
 }
