@@ -14,7 +14,7 @@ int i;
 
 for (i = 1; i <= n; i++)
 {
-_putchar(95);
+_putchar('_');
 }
 if (n <= 0)
 {
