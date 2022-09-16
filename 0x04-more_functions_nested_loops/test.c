@@ -1,11 +1,14 @@
 #include <stdio.h>
 int main(void)
 {
-	int i;
+	int i, j;
 
-	for (i=0; i <= 9; i++)
+	for (i = 0; i <= 14; i++)
 	{
+	
 	putchar(i + 48);
+
+
 	}
 	putchar('\n');
 	return 0;
