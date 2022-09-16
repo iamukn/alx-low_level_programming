@@ -1,17 +1,13 @@
 #include <stdio.h>
-void print(void)
-{
-	int c = 'a';
-	for (c; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-return;
-}
-
 int main(void)
 {
-print();
-return (0);
+	int i;
+
+	for (i=0; i <= 9; i++)
+	{
+	putchar(i + 48);
+	}
+	putchar('\n');
+	return 0;
 }
 
