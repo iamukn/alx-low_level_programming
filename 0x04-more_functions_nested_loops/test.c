@@ -13,7 +13,7 @@ int main(void)
 {       
 int i, n;
 
-n = 0;
+n = 5;
 
 if (n <= 0)
 {
@@ -22,7 +22,9 @@ putchar('\n');
 else
 {
 for (i = 1; i <= n; i++)
-        putchar('\\');
+{
+ 	putchar('\\');
+}
+}   
 putchar('\n');
-}       
 }
