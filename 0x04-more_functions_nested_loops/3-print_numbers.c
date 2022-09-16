@@ -9,13 +9,13 @@
 
 void print_numbers(void)
 {
-int c;
+int num;
 
-c = 0;
-while (c <= 9)
+num = 0;
+while (num <= 9)
 {
-_putchar(c);
-c++;
+_putchar(num);
+num++;
 }
 _putchar('\n');
 return;
