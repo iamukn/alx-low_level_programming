@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_diagonal- printing diagonals
+ * print_diagonal- printing diagonals n times
  *
- * @n: IAMUKN
+ * @n: n times diagonal is printed
  *
  * Return 0;
  */
@@ -18,7 +18,7 @@ for (j = 0; j <= i; j++)
 {
 _putchar(' ');
 }
-_putchar('\\');
+_putchar(92);
 if (i < (n-1))
 _putchar('\n');
 }
