@@ -9,13 +9,8 @@
 
 int main(void)
 {
-int c, a, z;
 
-a = 'A';
-b = 'Z';
-c = _isupper(c);
-
-if (c >= a || c <= b )
+if (c >= 65 || c <= 90 )
 {
 return (1);
 }
@@ -23,5 +18,5 @@ else
 {
 return (0);
 }
-return (0);
+
 }
