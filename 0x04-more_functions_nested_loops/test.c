@@ -1,27 +1,28 @@
 #include "main.h"
 
 /**
- * print_line - prints a line
+ * print_diagonal(int n)
  *
- * @n: serves as a line holder
+ * @n: IAMUKN
  *
- * Return: Always 0;
+ * Return 0;
  */
 
-int main (void)
-{
-	int i;
-int n = 10;
-for (i = 1; i <= n; i++)
-{
-_putchar(95);
-}
+int main(void)
+
+{       
+int i, n;
+
+n = 0;
+
 if (n <= 0)
 {
-_putchar('\n');
+putchar('\n');
+}       
+else
+{
+for (i = 1; i <= n; i++)
+        putchar('\\');
+putchar('\n');
+}       
 }
-_putchar('\n');
-return (0);
-}
-
-
