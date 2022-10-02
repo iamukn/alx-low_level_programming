@@ -15,19 +15,15 @@ int main(int argc, char *argv[])
 {
 int i, j;
 
-j =1;
-
 if (argc == 1)
 {
 printf("Error\n");
 return (1);
 }
+j = atoi(argv[1]);
+i = atoi(argv[2]);
 
-for (i =1; i < argc; i++)
-{
-j *= atoi(argv[i]);
-}
-printf("%d\n", j);
+printf("%d\n", j * i);
 
 return (0);
 }
