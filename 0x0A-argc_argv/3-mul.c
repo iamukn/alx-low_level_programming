@@ -13,17 +13,20 @@
 
 int main(int argc, char *argv[])
 {
-int i, j;
+int i, j, mul;
 
 if (argc == 1)
 {
 printf("Error\n");
+
 return (1);
 }
+
 j = atoi(argv[1]);
 i = atoi(argv[2]);
+mul = j *i;
 
-printf("%d\n", j * i);
+printf("%d\n", mul);
 
 return (0);
 }
