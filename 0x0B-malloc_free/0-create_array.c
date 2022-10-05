@@ -5,17 +5,11 @@
 
 
 /**
-
  * create_array - this creates an array of chars & initializes
-
  * it with a specific char.
-
  * @size: the array size
-
  * @c: char to initialize array
-
  * Return: array @a
-
 */
 
 
