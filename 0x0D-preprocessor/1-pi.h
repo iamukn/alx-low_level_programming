@@ -1,3 +1,4 @@
-#ifndef PI 
-#define PI 22/7.0
-#endif /* #ifndef PI */
+#ifndef PI_H
+#define PI_H
+#define PI 3.14159265359
+#endif /* #ifndef PI_H */
