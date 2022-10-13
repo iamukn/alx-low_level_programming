@@ -1,99 +1,52 @@
 #include "main.h"
-
 #include <stdlib.h>
 
-
-
 /**
-
- * argstostr - this is a function that concatenates
-
- *             all the arguments
-
+ * argstostr - concatenates all the arguments of a program.
+ * @ac: argument count.
+ * @av: argument vector.
  *
-
- * @ac: the argument counter
-
- * @av: the argument holder
-
- *
-
- * Return: a pointer to a new string
-
- *         or NULL if it fails
-
-*/
-
-
-
+ * Return: pointer of an array of char
+ */
 char *argstostr(int ac, char **av)
-
 {
+	char *aout;
+	int c, i, j, ia;
 
-	int i, j, k, length;
-
-	char *str;
-
-
-
-	if (ac == 0 || av == NULL)
-
+	if (ac == 0)
 		return (NULL);
 
-
-
-	/*find length of vector + '\0' which makes it a 2d array*/
-
-	length = 0;
-
-	for (i = 0; i < ac; i++)
-
+	for (c = i = 0; i < ac; i++)
 	{
+		if (av[i] == NULL)
+			return (NULL);
 
 		for (j = 0; av[i][j] != '\0'; j++)
-
-			length++;
-
-		length++;
-
+			c++;
+		c++;
 	}
 
+	aout = malloc((c + 1) * sizeof(char));
 
-
-	str = malloc((length + 1) * sizeof(char));
-
-	if (str == NULL)
-
-		return (NULL);
-
-
-
-	k = 0;
-
-	for (i = 0; i < ac; i++)
-
+	if (aout == NULL)
 	{
+		free(aout);
+		return (NULL);
+	}
 
-		for (j = 0; av[i][j] != '\0'; j++)
-
+	for (i = j = ia = 0; ia < c; j++, ia++)
+	{
+		if (av[i][j] == '\0')
 		{
-
-			str[k] = av[i][j];
-
-			k++;
-
+			aout[ia] = '\n';
+			i++;
+			ia++;
+			j = 0;
 		}
-
-		str[k] = '\n';
-
-		k++;
-
+		if (ia < c - 1)
+			aout[ia] = av[i][j];
 	}
+	aout[ia] = '\0';
 
-	str[k] = '\0';
-
-
-
-	return (str);
-
+	return (aout);
 }
