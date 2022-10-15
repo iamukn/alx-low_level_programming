@@ -1,10 +1,9 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
 struct dog
-{
+{ 
 char * name;
 float age;
 char * owner;
 };
-
-#endif /* ifndef MAIN_H */
+#endif /* ifndef DOG_H */
