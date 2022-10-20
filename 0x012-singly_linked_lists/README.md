@@ -1,0 +1,1 @@
+The linked list is a structure defined list that houses data and the pointer to another data, this list is more efficient to an array as it can allow for deletion of a data with ease unlike an array that deletes and leaves a space in the list
